@@ -1,0 +1,16 @@
+.navbar {
+    @apply fixed top-0 flex space-x-6 justify-center w-[100vw] transition-colors duration-300 py-3;
+
+    button {
+        @apply text-[#351500] uppercase font-semibold hover:text-[#7e001eff];
+        -webkit-text-stroke: 0.1px black;
+    }
+}
+
+.navbarTop {
+
+}
+
+.navbarScroll {
+    @apply bg-[#E4CCB5] bg-opacity-80 shadow-xl;
+}
