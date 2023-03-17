@@ -68,10 +68,8 @@ const Footer = () => {
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.227821509602!2d5.0858278157538495!3d51.0673443795653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1392d82bb3705%3A0x2cd03ac95764df59!2sDe%20Snelle%20Hap!5e0!3m2!1sen!2sbe!4v1651273454250!5m2!1sen!2sbe"
                             width="auto"
                             height="auto"
-                            allowfullscreen=""
                             loading="lazy"
                             className="invisible lg:visible h-0 lg:h-auto"
-                            referrerpolicy="no-referrer-when-downgrade"
                         ></iframe>
 
                     </div>
