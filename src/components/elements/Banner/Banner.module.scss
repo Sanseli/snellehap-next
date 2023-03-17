@@ -26,6 +26,6 @@
     }
 
     .button {
-        @apply rounded-lg px-7 py-4 text-xl shadow-lg bg-[#7e001eff] hover:bg-[#351500] text-white hover:text-[#89a02c] transition-colors duration-300 w-fit self-center mt-8;
+        @apply rounded-lg px-7 py-4 text-xl shadow-2xl bg-[#7e001eff] hover:bg-[#690019] text-white transition-colors duration-300 w-fit self-center mt-8;
     }
 }

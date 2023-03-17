@@ -3,7 +3,7 @@
 
     button {
         @apply text-[#351500] uppercase font-semibold hover:text-[#7e001eff];
-        -webkit-text-stroke: 0.1px black;
+        // -webkit-text-stroke: 0.1px black;
     }
 }
 
@@ -12,5 +12,5 @@
 }
 
 .navbarScroll {
-    @apply bg-[#E4CCB5] bg-opacity-80 shadow-xl;
+    @apply bg-[#E4CCB5] bg-opacity-90 shadow-xl;
 }

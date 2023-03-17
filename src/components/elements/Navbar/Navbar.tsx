@@ -19,14 +19,21 @@ export const useScrollPosition = () => {
   return scrollPosition
 }
 
+const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
 const Navbar = () => {
     const scrollPosition = useScrollPosition()
 
     return (<div className={`${styles.navbar} ${scrollPosition > 0 ? styles.navbarScroll : styles.navbarTop}`}>
-            <button>Home</button>
-            <button>Over ons</button>
-            <button>Menu</button>
-            <button>contact</button>
+            <button onClick={() => handleScroll('banner')}>Home</button>
+            <button onClick={() => handleScroll('about')}>Over ons</button>
+            <button onClick={() => handleScroll('menu')}>Menu</button>
+            <button onClick={() => handleScroll('contact')}>contact</button>
     </div>)
 }
 
