@@ -11,18 +11,19 @@ const Footer = () => {
 
     return (
         <>
-            <div id="contact" className="bg-[#7e001e] px-12 pt-20 pb-12 shadow-inner">
+            <div id="contact" className="bg-[#7e001e] px-12 pt-14 md:pt-20 pb-8 md:pb-12 shadow-inner">
                 <h1 className="text-center text-xl pb-10 font-semibold">CONTACT</h1>
 
                 <div className="container mx-auto">
-                    <div className="lg:grid grid-rows-4 md:grid-rows-1 md:grid-cols-4 justify-center mt-2 gap-0 md:gap-20 space-y-4 md:space-y-0 self-center h-full">
+                    {/* <div className="lg:grid grid-rows-4 md:grid-rows-1 md:grid-cols-4 justify-center mt-2 gap-0 md:gap-20 space-y-4 md:space-y-0 self-center h-full"> */}
+                    <div className="flex flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-24 justify-center">
                         <div>
                             <h2 className="mb-2 md:mb-6 text-lg flex space-x-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 self-center"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                 <span>Openingsuren</span>
                             </h2>
 
-                            <div className="grid gap-x-5 gap-y-[0.20em] grid-cols-3 grid-flow-row-dense">
+                            <div className="grid gap-x-5 gap-y-[0.20em] grid-cols-3 grid-flow-row-dense text-sm md:text-base">
                                 {
                                     openingHours.map(openingHour => {
                                         return <>
@@ -43,7 +44,7 @@ const Footer = () => {
                                 <span>Contacteer ons</span>
                             </h2>
 
-                            <a href="tel:+32471 95 1977">+32 (0)471 95 19 77</a>
+                            <a href="tel:+32471 95 1977" className="text-sm lg:text-base">+32 (0)471 95 19 77</a>
                         </div>
 
                         <div className="justify-self-center md:h-full">
@@ -55,7 +56,7 @@ const Footer = () => {
                                 <span>Bezoek ons</span>
                             </h2>
 
-                            <a href="https://goo.gl/maps/QbnRgaVU8LyE7Vx4A" target="_blank">
+                            <a href="https://goo.gl/maps/QbnRgaVU8LyE7Vx4A" target="_blank" className="text-sm lg:text-base">
                                 TakeAway De Snelle Hap <br />
                                 Markt 5 <br />
                                 3980 Tessenderlo
@@ -67,9 +68,12 @@ const Footer = () => {
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.227821509602!2d5.0858278157538495!3d51.0673443795653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1392d82bb3705%3A0x2cd03ac95764df59!2sDe%20Snelle%20Hap!5e0!3m2!1sen!2sbe!4v1651273454250!5m2!1sen!2sbe"
                             width="auto"
                             height="auto"
+                            allowfullscreen=""
                             loading="lazy"
-                            className="border-0 invisible sm:visible self-center h-full"
+                            className="invisible lg:visible h-0 lg:h-auto"
+                            referrerpolicy="no-referrer-when-downgrade"
                         ></iframe>
+
                     </div>
                 </div> 
             </div>
